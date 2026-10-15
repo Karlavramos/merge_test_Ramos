@@ -15,7 +15,11 @@ df = pd.DataFrame({
 print(df)
 
 # Select rows subset
+<<<<<<< HEAD
 subset = df[df['C'] == 'y']
+=======
+subset = df[df['C'] == 'x']
+>>>>>>> 7e7e018753d859bfb473b6962fb47eee4db5c3c3
 
 print("Subset has", len(subset), "rows.")
 
