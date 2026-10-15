@@ -7,7 +7,7 @@ rng = np.random.default_rng(seed=42)
 
 # Create a test 10x3 dataframe
 df = pd.DataFrame({
-    "A": np.arange(1, 11),
+    "column1": np.arange(1, 11),
     "B": rng.integers(10, 100, size=10),
     "C": rng.choice(["w", "x", "y", "z"], size=10)
 })
@@ -15,11 +15,7 @@ df = pd.DataFrame({
 print(df)
 
 # Select rows subset
-<<<<<<< HEAD
-subset = df[df['C'] == 'y']
-=======
 subset = df[df['C'] == 'x']
->>>>>>> 7e7e018753d859bfb473b6962fb47eee4db5c3c3
 
 print("Subset has", len(subset), "rows.")
 
